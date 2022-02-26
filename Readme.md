@@ -101,3 +101,19 @@ Deleting code for canister hello_assets, with canister_id mibou-6qaaa-aaaal-qafo
 `$dfx wallet --network=ic balance`
 
 `$14675675311831 cycles`
+
+#### get wallet id
+
+`$dfx identity --network ic get-wallet`
+
+Tasks:
+
+get more familiar with tools like dfx,
+
+get deep knowledge about the tooling,
+
+## Lesson 2
+
+### Motoko
+
+canister
