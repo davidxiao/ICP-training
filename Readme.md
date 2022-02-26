@@ -117,3 +117,39 @@ get deep knowledge about the tooling,
 ### Motoko
 
 canister
+
+dfx deploy --network=ic --with-cycles=873607108649
+
+Deploying all canisters.
+
+Creating canisters...
+
+Creating canister "qsort"...
+
+"qsort" canister created on network "ic" with canister id: "gq2wc-viaaa-aaaal-qai3q-cai"
+
+Creating canister "qsort_assets"...
+
+"qsort_assets" canister created on network "ic" with canister id: "h5usm-2aaaa-aaaal-qai4a-cai"
+
+Building canisters...
+
+Installing canisters...
+
+Installing code for canister qsort, with canister_id gq2wc-viaaa-aaaal-qai3q-cai
+
+Installing code for canister qsort_assets, with canister_id h5usm-2aaaa-aaaal-qai4a-cai
+
+Authorizing our identity (default) to the asset canister...
+
+Uploading assets to asset canister...
+
+Starting batch.
+
+Staging contents of new and changed assets:
+
+/sample-asset.txt 1/1 (24 bytes)
+
+Committing batch.
+
+Deployed canisters.
