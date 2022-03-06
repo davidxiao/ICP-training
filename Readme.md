@@ -153,3 +153,37 @@ Staging contents of new and changed assets:
 Committing batch.
 
 Deployed canisters.
+
+## lesson 3
+
+$ dfx canister call my_counter increment
+
+$ dfx canister call my_counter get
+
+### main network
+
+$ dfx deploy --network=ic --with-cycles=676607108649
+
+Deploying all canisters.
+
+Creating canisters...
+
+Creating canister "my_counter"...
+
+"my_counter" canister created on network "ic" with canister id: "smvxc-lqaaa-aaaal-qamsq-cai"
+
+Building canisters...
+
+Installing canisters...
+
+Installing code for canister my_counter, with canister_id smvxc-lqaaa-aaaal-qamsq-cai
+
+Deployed canisters.
+
+dfx canister --network=ic call my_counter increment
+
+dfx canister --network=ic call my_counter get
+
+via browser:
+
+https://smvxc-lqaaa-aaaal-qamsq-cai.raw.ic0.app/
