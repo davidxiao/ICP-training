@@ -187,3 +187,15 @@ dfx canister --network=ic call my_counter get
 via browser:
 
 https://smvxc-lqaaa-aaaal-qamsq-cai.raw.ic0.app/
+
+## lesson 4
+
+$ dfx canister id microblog
+
+$ dfx canister id microblog2
+
+$ dfx canister call microblog2 follow "(principal \"$(dfx canister id microblog)\")"
+
+$ dfx canister call microblog post "(\"1st msg\")"
+
+$ dfx canister call microblog post "(\"2nd msg\")"
