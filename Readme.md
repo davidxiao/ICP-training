@@ -199,3 +199,35 @@ $ dfx canister call microblog2 follow "(principal \"$(dfx canister id microblog)
 $ dfx canister call microblog post "(\"1st msg\")"
 
 $ dfx canister call microblog post "(\"2nd msg\")"
+
+$ dfx deploy --network=ic --with-cycles=873607108649
+
+Deploying all canisters.
+
+Creating canisters...
+
+Creating canister "microblog"...
+
+"microblog" canister created on network "ic" with canister id: "pcaep-jaaaa-aaaal-qaovq-cai"
+
+Creating canister "microblog_assets"...
+
+"microblog_assets" canister created on network "ic" with canister id: "pxhvc-iiaaa-aaaal-qaowa-cai"
+
+Building canisters...
+
+Building frontend...
+
+Installing canisters...
+
+Installing code for canister microblog, with canister_id pcaep-jaaaa-aaaal-qaovq-cai
+
+Installing code for canister microblog_assets, with canister_id pxhvc-iiaaa-aaaal-qaowa-cai
+
+Authorizing our identity (default) to the asset canister...
+
+Uploading assets to asset canister...
+
+Starting batch.
+
+Deployed canisters.
