@@ -231,3 +231,7 @@ Uploading assets to asset canister...
 Starting batch.
 
 Deployed canisters.
+
+## lesson 5
+
+dfx deploy --network=ic --with-cycles=7355608158886
