@@ -1,7 +1,7 @@
 type Time = int;
 type Message = 
  record {
-   author: text;
+   author: opt text;
    authorId: principal;
    id: nat;
    "text": text;
@@ -10,7 +10,7 @@ type Message =
 service : {
   follow: (principal) -> ();
   follows: () -> (vec principal) query;
-  get_name: () -> (text) query;
+  get_name: () -> (opt text) query;
   post: (text) -> ();
   posts: (Time) -> (vec Message) query;
   set_name: (text) -> ();

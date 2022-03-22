@@ -7,7 +7,7 @@ actor CMicroblog{
     public type Message = {
         id: Nat;
         text: Text;
-        author: Text;
+        author: ?Text;
         time: Time.Time;
         authorId: Principal;
 
@@ -22,12 +22,12 @@ actor CMicroblog{
     };
 
     var followed: List.List<Principal> = List.nil();
-    var author: Text = "david 1";
+    var author: ?Text = null;
     public shared func set_name(_author: Text): async (){
-        author := _author;
+        author := ?_author;
     };
-    public shared query func get_name(): async Text {
-        author
+    public shared query func get_name(): async ?Text {
+        return author;
     };
 
     public shared func follow(id:Principal): async (){
@@ -41,6 +41,7 @@ actor CMicroblog{
 
     public shared func post(_text:Text): async (){
         var authorId = Principal.fromActor(CMicroblog);
+        
         var msg = {
             id = msgCounter;
             text = _text;
