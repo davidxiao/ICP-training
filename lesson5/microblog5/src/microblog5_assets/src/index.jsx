@@ -11,7 +11,7 @@ const Microblog = () => {
   const [follow, setFollow] = useState("");
   
   async function saveName(){
-    await microblog.post(name)
+    await microblog.set_name(name)
   }
   async function savePost(){
     await microblog.post(post)
